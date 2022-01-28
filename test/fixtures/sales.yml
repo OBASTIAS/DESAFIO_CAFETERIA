@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coffee_name: MyString
+  origin: MyString
+  cofee_mix: MyString
+  amount: 
+  date_time: 2022-01-27 17:10:16
+
+two:
+  coffee_name: MyString
+  origin: MyString
+  cofee_mix: MyString
+  amount: 
+  date_time: 2022-01-27 17:10:16

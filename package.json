@@ -1,0 +1,8 @@
+{
+  "name": "cafeteria",
+  "private": true,
+  "dependencies": {
+    "highcharts": "^9.3.2",
+    "jquery": "^3.6.0"
+  }
+}

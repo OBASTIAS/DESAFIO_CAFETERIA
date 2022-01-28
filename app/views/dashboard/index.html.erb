@@ -1,0 +1,43 @@
+<h1> ventas mensuales de los últimos 12 meses</h1>
+<%= column_chart @sales_grouped_by_month_sum,prefix: "$"%>
+<br>
+<h1>  cantiad de ventas mensual de los últimos 12 meses</h1>
+<%= column_chart @sales_grouped_by_month_count%>
+
+<br>
+
+<h1>   promedio de venta mensual de los últimos 12 meses</h1>
+<%= column_chart @sales_grouped_by_month_avg , prefix: "$",round: 0%>
+
+<br>
+
+<h1>  cantidad de ventas según el origen del café en:</h1>
+    <ul>
+        <li>Los últimos 12 meses.</li>
+        <%= pie_chart @sales_grouped_by_origin_12 %>
+        <li>Los últimos 6 meses. </li>
+        <%= pie_chart @sales_grouped_by_origin_6 %>
+        <li>Los últimos 3 meses. </li>
+        <%= pie_chart @sales_grouped_by_origin_3 %>
+        <li>El último mes.</li>
+        <%= pie_chart @sales_grouped_by_origin_1 %>
+    </ul>
+<br>
+
+<h1>  cantidad de ventas según el nombre de la mezcla del café en:</h1>
+    <ul>
+        <li>Los últimos 12 meses.</li>
+        <%= pie_chart @sales_grouped_by_variety_12 %>
+        <li>Los últimos 6 meses. </li>
+        <%= pie_chart @sales_grouped_by_variety_6 %>
+        <li>Los últimos 3 meses. </li>
+        <%= pie_chart @sales_grouped_by_variety_3 %>
+        <li>El último mes.</li>
+        <%= pie_chart @sales_grouped_by_variety_1%>
+
+    </ul>
+
+
+
+
+
